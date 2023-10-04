@@ -1,0 +1,370 @@
+.ws_direccion{
+    background-color: #DC143C !important;
+    border: 2px solid crimson !important;
+}
+
+.wm_updateElement{
+    border: 2px solid lime !important;
+	background-color: lime !important;
+}
+
+.wm_node2{
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.wm_node{
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.wm_node i {
+  border: solid #DC143C;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  z-index: 1000;
+}
+
+.wm_node i.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.wm_node i.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.wm_node i.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.wm_node i.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*.ws_direccionm{
+    background-color: #228B22;
+    border: 2px solid ForestGreen;
+}
+
+.wm_nodem{
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.wm_nodem i {
+  border: solid #228B22;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.wm_nodem i.rightm {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.wm_nodem i.leftm {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.wm_nodem i.upm {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.wm_nodem i.downm {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}*/
+
+.wm_closeVentana {
+    float:right;
+    padding:2px 5px;
+    background:rgba(255, 0, 0, 0);
+	color: black;
+	font-weight: bold;
+}
+
+.wm_closeVentanaCopy {
+    float:right;
+    padding:2px 50px 2px 5px;
+    background:rgba(255, 0, 0, 0);
+	color: black;
+	font-weight: bold;
+}
+
+.wm_removedNode{
+	display:none !important;
+}
+
+#wm_closenode{
+	text-shadow: 0 0 3px #FFFFFF, 0 0 5px #FFFFFF
+}
+
+/*#ok_button_move {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    line-height: 200px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+    background-color: #f1c40f;
+    text-align: center;
+    z-index: 10; 
+    outline: 9999px solid rgba(0,0,0,0.5);
+}*/
+
+.wm_father {
+    /*display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border: 5px solid #FF0;
+    border: 5px solid rgba(255,255,0,1); // rgba(0,191,255,0.5); 
+    border-radius: 2em;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 999999;*/
+}
+
+ #wm_newButton {
+     border: 1px dashed #669966;
+     background-color: #ccffcc;
+	 height: 50%;
+	 width: 50%;
+     top: 0;
+     left: 0;
+	 z-index: 1000;
+ }
+ 
+ #wm_updateButton {
+     border: 1px dashed #669966;
+     background-color: #FF8C00;
+	 height: 50%;
+	 width: 50%;
+     top: 0;
+     left: 0;
+	 z-index: 1000;
+ }
+ 
+ #wm_saveButton {
+     border: 1px dashed #669966;
+     background-color: #FFD700;
+	 height: 50%;
+	 width: 50%;
+     top: 0;
+     left: 50%;
+	 z-index: 1000;
+ }
+ 
+ #wm_mineButton {
+     border: 1px dashed #669966;
+     background-color: #8B008B;
+	 height: 50%;
+	 width: 50%;
+     top: 0;
+     left: 50%;
+	 z-index: 1000;
+ }
+ 
+ #wm_removeButton {
+     border: 1px dashed #669966;
+     background-color: #0000CD;
+	 height: 50%;
+	 width: 50%;
+     top: 50%;
+     left: 0;
+	 z-index: 1000;
+ }
+ 
+ #wm_cancelButton {
+     border: 1px dashed #669966;
+     background-color: #B22222;
+	 height: 50%;
+	 width: 50%;
+     top: 50%;
+     left: 50%;
+	 z-index: 1000;
+ }
+ 
+  #wm_copyNameButton {
+     border: 1px dashed #A9A9A9;
+     background-color: #A9A9A9;
+	 height: 25%;
+	 width: 50%;
+     top: 25%;
+     left: 25%;
+	 z-index: 1000;
+ }
+ 
+ #wm_widgetPannel{
+	 border: 1px dashed #A9A9A9;
+     background-color: #A9A9A9;
+	 height: 100%;
+	 width: 100%;
+     top: 0%;
+     left: 0%;
+	 z-index: 1000;
+	 overflow: scroll;
+	 position:fixed;
+ }
+ 
+ #wm_loadingPannel{
+	 border: 1px dashed #A9A9A9;
+     background-color: #A9A9A9;
+	 height: 100%;
+	 width: 100%;
+     top: 0%;
+     left: 0%;
+	 z-index: 1000;
+	 overflow: scroll;
+	 position:fixed;
+ }
+ 
+ .wm_loadingtext{
+	 text-align: center;
+	 font-size: 25px;
+	 color: #B22222;
+	 display: table-cell;
+	vertical-align: middle;
+ }
+ 
+ #wm_copyButton {
+	background-color: #008CBA;
+}
+
+#wm_fname{
+  width: 50%;
+  padding: 1%;
+}
+#wm_acceptbutton {
+	background-color: #008CBA;
+	width: 25%;
+}
+#wm_cancelbutton {
+	background-color: #008CBA;
+	width: 25%;
+}
+
+#wm_centeringInputButtons{
+	position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+ .wm_initialButton2{
+     position: fixed;
+     text-align: center;
+	 display: table;
+ }
+
+ .wm_initialButton{
+	 opacity: 0.7;
+     position: fixed;
+     text-align: center;
+	 display: table;
+ }
+ 
+ .wm_newButtonSpan{
+	 vertical-align: middle;
+	 display:  table-cell;
+	 font-size: 10vw;
+	 z-index: 1000;
+ }
+ 
+ .wm_disableButton{
+	 background-color: #101010 !important;
+ }
+
+ .wm_widgetInserted{
+	border: 2px solid crimson;
+	position: relative;
+ }
+ 
+ .wm_nodewidget{
+    cursor: pointer;
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	padding: 12px 16px;
+	transform: translate(0%, -50%);
+	background: crimson;
+}
+ 
+ #wm_topcorner{
+   position:fixed;
+   top:0;
+   right:0;
+   width: 25px;
+   height: 15px;
+   background: #cb4e4e;
+   font-size: larger;
+   border-radius: 5px;
+   color: #fff;
+   box-shadow: 0 6px #ab3c3c;
+   transition: none;
+   border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+	font-size: 4vmin;
+	z-index: 1001;
+  }
+  
+  .wm_updatenode {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	padding: 12px 16px;
+	transform: translate(0%, -50%);
+	background: crimson;
+	z-index: 1000;
+}
+
+.wm_alert {
+  padding: 5px;
+  background-color: #f44336;
+  color: white;
+}
+
+.wm_closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.wm_closebtn:hover {
+  color: black;
+}

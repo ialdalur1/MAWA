@@ -1,0 +1,20 @@
+{
+  "description": "This extension provides the possibility of selecting nodes to remove or move them adapting the website to your needs",
+  "manifest_version": 2,
+  "name": "mawa",
+  "version": "0.4.6",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+          "storage",
+		  "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+	  "matches": ["*://*/*"],
+	  "css": ["css.css"],
+      "js": ["jquery-3.6.0.min.js", "xpath.js", "index.min.js", "scroll-behaviour.min.js", "demo.js", "DragDropTouch.js", "htmlclipper.js", "node-select.js"]
+    }
+  ]
+}
